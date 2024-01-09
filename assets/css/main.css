@@ -19,6 +19,24 @@ body {
   overflow-x: hidden;
 }
 
+.mytag{
+  background:url("../img/images/screenshot-20231224-at-1139-1@2x.png"),lightgray 50%;
+  background-position: center;
+  background-size: cover;
+  display: flexbox;
+  flex-shrink: 0;
+}
+.mytag img{
+  height: 100%;
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 15%;
+}
+.footing{
+  padding-left:0px;
+  padding-top:0px;
+}
+
 h1, h2, h3, h4 {
   font-size: 36px;
   font-weight: 700;
@@ -2123,7 +2141,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   right: 0;
   top: 0;
 }
-
 #main-slide .carousel-item .carousel-caption {
   opacity: 0;
   transition: opacity 100ms ease 0s;
@@ -2217,3 +2234,500 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff;
   border-color: #fff;
 }
+
+/*-------------------------------------------------------------------------------------/*
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  /* color: #2f3138; */
+  font-family: "Open Sans", sans-serif;
+  /* background-position: center;
+  background-size: cover; */
+  /* top: 100%; */
+}
+.mytag{
+  background:url("../img/screenshot-20231224-at-1139-1@2x.png"),lightgray 50%;
+  background-position: center;
+  background-size: cover;
+  display: flexbox;
+  flex-shrink: 0;
+}
+.mytag img{
+  height: 100%;
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 15%;
+}
+.footing{
+  padding-left:0px;
+  padding-top:0px;
+}
+a {
+  color: #b8439a;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #624698;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #e6e7ed;
+}
+
+.main-page {
+  margin-top: 70px;
+}
+
+/* Prelaoder */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../img/preloader.svg") no-repeat center center;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #b8439a;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #624698;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Sections Header
+--------------------------------*/
+.section-header {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #b8439a;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+
+.section-with-bg {
+  background-color: #f6f7fd;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 90px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header.header-scrolled,
+#header.header-inner {
+  background: rgba(6, 12, 34, 0.98);
+  height: 70px;
+}
+
+#header #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header #logo h1 span {
+  color: #b8439a;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+  color: #fff;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 50px;
+}
+
+@media (max-width: 992px) {
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+
+/*--------------------------------------------------------------
+
+
+/*--------------------------------------------------------------
+# schedule1 Section
+--------------------------------------------------------------*/
+#schedule1 .nav-tabs a:hover {
+  color: #fff; /* Change the text color on hover */
+  background: #E91E63; /* Change the background color on hover */
+}
+
+#schedule1 .nav-tabs a.active:hover {
+  color: #fff; /* Change the text color on hover for the active tab */
+  background: #E91E63; /* Change the background color on hover for the active tab */
+}
+
+#schedule1 {
+  padding: 60px 0 60px 0;
+}
+
+#schedule1 .nav-tabs{
+  text-align: center; 
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+  color: #000;
+font-family: Montserrat;
+/* font-size: 37.01px; */
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+#schedule1 .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+  /* height: 6px; */
+  flex-shrink: 0;
+}
+
+#schedule1 .nav-tabs a {
+  color: #00F0FF;;
+  border-radius: 12.895px;
+  border: 2px solid #00F0FF;
+  /* background: #00F0FF; */
+}
+
+@media (max-width: 991px) {
+  #schedule1 .nav-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #schedule1 .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #schedule1 .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+
+#schedule1 .nav-tabs a.active {
+  color:#00F0FF;
+  background: transparent;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#schedule1 .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+@media (min-width: 991px) {
+  #schedule1 .sub-heading {
+    width: 75%;
+  }
+  #schedule1 .nav-tabs{
+    font-size: 37.01px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  }
+}
+
+#schedule1 .tab-pane {
+  transition: ease-in-out 0.2s;
+}
+
+#schedule1 .schedule1-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#schedule1 .schedule1-item:hover {
+  background-color: #fff;
+}
+
+#schedule1 .schedule1-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#schedule1 .schedule1-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#schedule1 .schedule1-item .speaker img {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#schedule1 .schedule1-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#schedule1 .schedule1-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#schedule1 .schedule1-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
+
+.swal-button {
+  background-color: #b8439a !important;
+}
+
+.swal-button:hover {
+  background-color: #b8439a !important;
+}
+
+.countdown {
+  margin-bottom: 10px;
+}
+
+.countdown div {
+  text-align: center;
+  margin: 10px;
+  width: 100px;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.12);
+  border-top: 5px solid #b8439a;
+}
+
+.countdown div h3 {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 15px;
+  color: whitesmoke;
+}
+
+.countdown div h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+@media (max-width: 575px) {
+  .countdown div {
+    width: 70px;
+    padding: 10px 0;
+    margin: 10px 8px;
+  }
+
+  .countdown div h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  }
+
+  .countdown div h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: whitesmoke;
+  }
+}
+
+
+.btn-primary {
+  color: white !important;
+  border-radius: 50px !important;
+  padding: 5px 30px 5px 30px;
+  /* --bs-btn-color: #fff; */
+  --bs-btn-bg: #b8439a;
+  --bs-btn-border-color: #b8439a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #624698;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #fff;
+  --bs-btn-active-border-color: #fff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #b8439a;
+  --bs-btn-disabled-border-color: #b8439a;
+}
+
+.btn-secondary {
+  --bs-btn-hover-border-color: #fff;
+}
+
+#forgotpasswordButton {
+  background: #b8439a;
+  border: 0;
+  padding: 0px 70px 0px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+#loginButton {
+  background: #b8439a;
+  border: 0;
+  padding: 0px 70px 0px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+#loginLoader {
+  visibility: hidden;
+  margin-right: 10px;
+}
+
+#forgotPassLoader {
+  visibility: hidden;
+  margin-right: 10px;
+}
+
+#eventRegisterButton {
+  background: #b8439a;
+  border: 0;
+  padding: 0px 70px 0px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+#eventRegisterLoader {
+  visibility: hidden;
+  margin-right: 10px;
+}
+
+#logoutButtonShow{
+  display: none;
+}
+
+#loginButtonShow{
+  display: none;
+}
+
