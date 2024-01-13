@@ -982,7 +982,9 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 /* Sponsors Area */
 #sponsors {
-  background: #f3f4f3;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background: #0d0915;
 }
 
 #sponsors .spnsors-logo {
