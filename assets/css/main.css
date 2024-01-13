@@ -2322,10 +2322,18 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Set the video behind other content */
+  z-index: -2 /* Set the video behind other content */
+}
+.mytag .video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha channel for transparency */
+  z-index: -1; /* Set the overlay behind the video */
 }
 .mytag{
-
   /* background:url("../img/screenshot-20231224-at-1139-1@2x.png"),lightgray 50%; */
   background-position: center;
   background-size: cover;
