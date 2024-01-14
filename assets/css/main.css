@@ -1,3 +1,7 @@
+:root{
+  --theme-gradient : linear-gradient(90deg, rgb(40, 78, 162) 0%, rgb(78, 181, 231) 100%)
+}
+
 @import url("https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:700");
 html {
   overflow-x: hidden;
@@ -222,14 +226,14 @@ ul li, ol li {
 }
 
 .btn-common {
-  background-color:linear-gradient(30deg, rgba(34,164,166,1) 0%, rgba(41,47,49,1) 100%);
+  /* background-color:linear-gradient(30deg, rgba(34,164,166,1) 0%, rgba(41,47,49,1) 100%); */
   position: relative;
   z-index: 1;
 }
 
 .btn-common {
   color: #fff;
-  background:linear-gradient(45deg, rgba(34,164,116,1) 0%, rgba(41,47,143,1) 100%);
+  background:var(--theme-gradient);
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   /* transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -241,9 +245,9 @@ ul li, ol li {
   color: #fff;
   background:linear-gradient(45deg, rgb(164, 34, 34), rgba(41,47,143,1) 100%);
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-  transition: all .2s ease-in-out;
+  /* transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
-  -webkit-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out; */
 }
 
 .btn-border {
@@ -618,7 +622,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .top-nav-collapse {
-  background: #fff;
+  /* background: #fff; */
   z-index: 999999;
   top: 0px !important;
   min-height: 58px;
@@ -629,7 +633,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   animation-fill-mode: both;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  background: #fff !important;
+  background: var(--theme-gradient) !important;
 }
 
 .top-nav-collapse .navbar-brand {
@@ -810,15 +814,15 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .slicknav_btn {
-  border-color: #2b01e3;
+  border-color: white;
 }
 
 .slicknav_menu {
-  background: #2f1f33;
+  background: none;
 }
 
 .slicknav_menu .slicknav_icon-bar {
-  background: #2b01e3;
+  background: white;
 }
 
 /* only small tablets */
@@ -860,7 +864,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   }
 
   .slicknav_nav {
-    background: linear-gradient(45deg,  rgb(50, 7, 83) 0%, rgb(13, 22, 139) 100%);
+    background: var(--theme-gradient);
   }
 
   .slicknav_nav .active a {
@@ -938,7 +942,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .counter-section {
-  background: linear-gradient(90deg, rgba(34,164,166,1) 0%, rgba(41,47,49,1) 100%);
+  background: var(--theme-gradient);
   overflow: hidden;
   position: relative;
   /* 
@@ -1414,9 +1418,9 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .team-item .info-text {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+  position: relative;;
+  /* bottom: 10px;
+  left: 10px; */
   padding: 15px 20px;
   background: #f3f4f3;
   text-align: left;
