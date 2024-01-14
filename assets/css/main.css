@@ -84,6 +84,16 @@ ul li, ol li {
   letter-spacing: 0.1rem;
 }
 
+.register-and-login {
+  /* z-index: 100; */
+  position: absolute;
+  transform: translateX(-40px) translateY(150px);
+  
+}
+.register-and-login-button{
+  margin: 1px;
+}
+
 .section-titile-bg {
   display: inline;
   font-size: 115px;
@@ -2613,6 +2623,7 @@ h6 {
 }
 
 .hero-layer-1-zoomer{
+  z-index: -1;
   transform: scale(3);
 }
 
