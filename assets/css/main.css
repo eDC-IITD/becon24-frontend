@@ -2630,7 +2630,7 @@ h6 {
   z-index: 2;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9) ;
+  background-color: rgba(0, 0, 0, 0.7) ;
   top : 0;
 }
 
@@ -2658,7 +2658,7 @@ h6 {
   z-index: 1;
   height: 100%;
   width: 100%;
-  background-color: rgb(0, 255, 102);
+  /* background-color: rgb(0, 255, 102); */
 }
 
 #hero-video {
