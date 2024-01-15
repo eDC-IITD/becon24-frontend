@@ -90,6 +90,15 @@ ul li, ol li {
   transform: translateX(-40px) translateY(150px);
   
 }
+
+@media (min-width: 768px)  {
+  .register-and-login {
+    transform: translateX(100px) translateY(300px);
+  }
+}
+
+
+
 .register-and-login-button{
   margin: 1px;
 }
@@ -2618,7 +2627,7 @@ h6 {
   z-index: 2;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, .6) ;
+  background-color: rgba(0, 0, 0, 0.9) ;
   top : 0;
 }
 
@@ -2646,7 +2655,7 @@ h6 {
   z-index: 1;
   height: 100%;
   width: 100%;
-  /* background-color: rgb(74, 149, 104); */
+  background-color: rgb(0, 255, 102);
 }
 
 #hero-video {
